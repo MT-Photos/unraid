@@ -33,12 +33,12 @@
     </Networking>
     <Data>
         <Volume>
-            <HostDir/>
+            <HostDir>/mnt/user/appdata/mt-photos/config</HostDir>
             <ContainerDir>/config</ContainerDir>
             <Mode>rw</Mode>
         </Volume>
         <Volume>
-            <HostDir/>
+            <HostDir>/mnt/user/appdata/mt-photos/upload</HostDir>
             <ContainerDir>/upload</ContainerDir>
             <Mode>rw</Mode>
         </Volume>
