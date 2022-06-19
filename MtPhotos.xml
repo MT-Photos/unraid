@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <Container version="2">
-    <Name>MTPhotos</Name>
+    <Name>MtPhotos</Name>
     <Repository>mtphotos/mt-photos</Repository>
     <Registry>https://hub.docker.com/r/mtphotos/mt-photos</Registry>
     <Network>bridge</Network>
@@ -33,12 +33,12 @@
     </Networking>
     <Data>
         <Volume>
-            <HostDir>/mnt/user/appdata/mt-photos/config</HostDir>
+            <HostDir/>
             <ContainerDir>/config</ContainerDir>
             <Mode>rw</Mode>
         </Volume>
         <Volume>
-            <HostDir>/mnt/user/appdata/mt-photos/upload</HostDir>
+            <HostDir/>
             <ContainerDir>/upload</ContainerDir>
             <Mode>rw</Mode>
         </Volume>
