@@ -5,12 +5,11 @@ MT Photos unraid 模板库
 
 #### 添加模板库
 
-打开 unraid 的 docker 页面：
+1、打开 unraid 的 终端 页面；
 
-1. 将本仓库地址 https://github.com/MT-Photos/unraid 填入 **Template repositories**
-2. 点击 SAVE 保存，等待 unraid 自动拉取模板库并刷新页面 （如果添加失败，请检查网络是否能打开github.com）
+2、在终端中执行`wget -P /boot/config/plugins/dockerMan/templates https://cdn.mtmt.tech/unraid/MtPhotos.xml` 下载模板
 
-![添加模板库](img/add-template.png)
+![下载模板库](img/wget-template.png)
 
 
 #### 添加容器
