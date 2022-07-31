@@ -3,18 +3,21 @@ MT Photos unraid 模板库
 
 ### 使用方法
 
-#### 添加模板库
+#### 添加模板
 
 1、打开 unraid 的 终端 页面；
 
-2、在终端中执行`wget -P /boot/config/plugins/dockerMan/templates https://cdn.mtmt.tech/unraid/MtPhotos.xml` 下载模板
+2、在终端中执行以下命令下载模板;
+```bash
+wget -P /boot/config/plugins/dockerMan/templates https://cdn.mtmt.tech/unraid/MtPhotos.xml
+``` 
 
 ![下载模板库](img/wget-template.png)
 
 
 #### 添加容器
 
-在 Unraid 自动刷新页面之后，点击 **ADD CONTAINER** 添加容器
+在 Unraid 的Docker中，点击 **ADD CONTAINER** 添加容器
 
 ![添加容器](img/add-container.png)
 
