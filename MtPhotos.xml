@@ -1,51 +1,28 @@
 <?xml version="1.0"?>
 <Container version="2">
     <Name>MtPhotos</Name>
-    <Repository>mtphotos/mt-photos</Repository>
+    <Repository>mtphotos/mt-photos:latest</Repository>
     <Registry>https://hub.docker.com/r/mtphotos/mt-photos</Registry>
     <Network>bridge</Network>
     <MyIP/>
     <Shell>sh</Shell>
     <Privileged>false</Privileged>
-    <Support/>
+    <Support>https://mtmt.tech/contact</Support>
     <Project>https://mtmt.tech</Project>
-    <Overview>&#x7167;&#x7247;&#x7BA1;&#x7406;&#x7CFB;&#x7EDF;</Overview>
+    <Overview>MT Photos is a photo management system made for Nas users.&#xD;
+        Through AI technology, automatically organize and classify your photos, including but not limited to time, location, person, and photo type.</Overview>
     <Category>Productivity: MediaApp:Photos</Category>
     <WebUI>http://[IP]:[PORT:8063]/</WebUI>
     <TemplateURL/>
-    <Icon>https://cdn.mtmt.tech/logo.png</Icon>
+    <Icon>https://cdn.mtmt.tech/logo-r.png</Icon>
     <ExtraParams/>
     <PostArgs/>
     <CPUset/>
-    <DateInstalled>1655628459</DateInstalled>
+    <DateInstalled>1682047314</DateInstalled>
     <DonateText/>
     <DonateLink/>
-    <Description>&#x7167;&#x7247;&#x7BA1;&#x7406;&#x7CFB;&#x7EDF;</Description>
-    <Networking>
-        <Mode>bridge</Mode>
-        <Publish>
-            <Port>
-                <HostPort>8063</HostPort>
-                <ContainerPort>8063</ContainerPort>
-                <Protocol>tcp</Protocol>
-            </Port>
-        </Publish>
-    </Networking>
-    <Data>
-        <Volume>
-            <HostDir/>
-            <ContainerDir>/config</ContainerDir>
-            <Mode>rw</Mode>
-        </Volume>
-        <Volume>
-            <HostDir/>
-            <ContainerDir>/upload</ContainerDir>
-            <Mode>rw</Mode>
-        </Volume>
-    </Data>
-    <Environment/>
-    <Labels/>
-    <Config Name="Host Port 1" Target="8063" Default="" Mode="tcp" Description="Container Port: 8063" Type="Port" Display="always" Required="false" Mask="false">8063</Config>
-    <Config Name="&#x6570;&#x636E;&#x5B58;&#x50A8;" Target="/config" Default="" Mode="rw" Description="Container Path: /config" Type="Path" Display="always" Required="false" Mask="false"/>
-    <Config Name="App&#x5907;&#x4EFD;&#x7684;&#x7167;&#x7247;&#x3001;&#x89C6;&#x9891;&#x76EE;&#x5F55;" Target="/upload" Default="" Mode="rw" Description="Container Path: /upload" Type="Path" Display="always" Required="false" Mask="false"/>
+    <Requires/>
+    <Config Name="Web Service Port" Target="8063" Default="8063" Mode="tcp" Description="" Type="Port" Display="always" Required="true" Mask="null">8063</Config>
+    <Config Name="Data storage directory" Target="/config" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="null"/>
+    <Config Name="App backup directory" Target="/upload" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="null"/>
 </Container>
